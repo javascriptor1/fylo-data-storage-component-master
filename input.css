@@ -7,3 +7,23 @@
 }
 
 
+@media (min-width:1024px) {
+    
+    body {
+        background-color: hsl(229, 57%, 11%);
+    }
+    
+    .white-div::after {
+        content: '';
+        position: absolute;
+        border: 16px solid white;
+        border-right-color: white;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        border-top-color: transparent;
+        border-right-width: 30px;
+        right: 0;
+        top: 54px;
+
+    }
+}

@@ -34,9 +34,13 @@
   <body
     class="grid place-content-center min-h-screen text-sm bg-mobile-bg lg:bg-desktop-bg bg-no-repeat bg-cover"
   >
-    <main class="flex flex-col w-[340px] space-y-4">
+    <main
+      class="flex flex-col w-[340px] space-y-4 lg:flex-row min-w-[925px] lg:gap-8"
+    >
       <!-- ---------- First div here ------------- -->
-      <div class="bg-DarkBlue p-12 rounded-2xl space-y-8 rounded-tr-[100px]">
+      <div
+        class="bg-DarkBlue p-12 rounded-2xl space-y-8 rounded-tr-[100px] lg:w-1/3"
+      >
         <img src="images/logo.svg" alt="Fylo Logo" />
 
         <!-- small feature photos -->
@@ -54,7 +58,9 @@
       </div>
       <!-- --------- Second div here ------------------------ -->
 
-      <div class="bg-DarkBlue p-12 rounded-2xl relative">
+      <div
+        class="bg-DarkBlue p-12 rounded-2xl relative lg:w-2/3 lg:max-h-[156px] self-end"
+      >
         <p class="text-PaleBlue mb-4">
           You’ve used <span class="font-bold">815 GB</span> of your storage
         </p>
@@ -72,10 +78,13 @@
         </div>
         <!-- --------- white absolute div here ---------------------- -->
         <div
-          class="w-[180px] h-[70px] bg-white rounded-xl p-4 flex items-center justify-center space-x-2 absolute bottom-[0] left-[50%] transform translate-y-[50%] translate-x-[-50%]"
+          class="white-div w-[180px] h-[70px] bg-white rounded-xl p-4 flex items-center justify-center space-x-2 absolute bottom-[0] left-[50%] transform translate-y-[50%] translate-x-[-50%]
+          lg:top-[-10px] lg:right-[40px] lg:transform lg:translate-y-[-50%] lg:translate-x-[40%]
+          "
         >
           <p class="text-center font-bold text-4xl">185</p>
           <p class="font-bold text-GrayishBlue">GB Left</p>
+
         </div>
         <div class="flex justify-between text-PaleBlue font-bold mb-4">
           <p>0 GB</p>
