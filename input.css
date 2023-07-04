@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.small-feature-image-div {
+    @apply w-12 h-12 rounded-xl bg-VeryDarkBlue flex items-center justify-center
+}
+
+

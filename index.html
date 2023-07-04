@@ -27,18 +27,68 @@
         text-align: center;
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: hsl(0, 0%, 100%);
       }
     </style>
   </head>
-  <body class="grid place-content-center min-h-screen text-sm">
-    You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB
+  <body
+    class="grid place-content-center min-h-screen text-sm bg-mobile-bg lg:bg-desktop-bg bg-no-repeat bg-cover"
+  >
+    <main class="flex flex-col w-[340px] space-y-4">
+      <!-- ---------- First div here ------------- -->
+      <div class="bg-DarkBlue p-12 rounded-2xl space-y-8 rounded-tr-[100px]">
+        <img src="images/logo.svg" alt="Fylo Logo" />
 
-    <div class="attribution">
+        <!-- small feature photos -->
+        <div class="flex space-x-4">
+          <div class="small-feature-image-div">
+            <img src="images/icon-document.svg" alt="Document photo" />
+          </div>
+          <div class="small-feature-image-div">
+            <img src="images/icon-folder.svg" alt="Folder photo" />
+          </div>
+          <div class="small-feature-image-div">
+            <img src="images/icon-upload.svg" alt="Upload photo" />
+          </div>
+        </div>
+      </div>
+      <!-- --------- Second div here ------------------------ -->
+
+      <div class="bg-DarkBlue p-12 rounded-2xl relative">
+        <p class="text-PaleBlue mb-4">
+          You’ve used <span class="font-bold">815 GB</span> of your storage
+        </p>
+
+        <!-- storgae usage tracking bar here --------- -->
+        <div class="h-5 bg-VeryDarkBlue rounded-full p-[4px] relative">
+          <div
+            class="h-4 w-[85%] bg-gradient-to-r from-[#ffa399] to-[#ff4d97] rounded-full absolute top-[50%] left-[1%] transform translate-y-[-50%]"
+          >
+            <!-- white circle here  -->
+            <div
+              class="w-3 h-3 rounded-full bg-white absolute right-[2px] top-[50%] transform translate-y-[-50%]"
+            ></div>
+          </div>
+        </div>
+        <!-- --------- white absolute div here ---------------------- -->
+        <div
+          class="w-[180px] h-[70px] bg-white rounded-xl p-4 flex items-center justify-center space-x-2 absolute bottom-[0] left-[50%] transform translate-y-[50%] translate-x-[-50%]"
+        >
+          <p class="text-center font-bold text-4xl">185</p>
+          <p class="font-bold text-GrayishBlue">GB Left</p>
+        </div>
+        <div class="flex justify-between text-PaleBlue font-bold mb-4">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">MKF</a>
-    </div>
+    </footer> -->
   </body>
 </html>
